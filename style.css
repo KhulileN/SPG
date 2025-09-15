@@ -1,22 +1,30 @@
 body {
-    background: #181818;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+  background: #181818;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
+
 h1 {
-    margin-top: 32px;
-    margin-bottom: 16px;
-    font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  text-align: center;
+  font-size: clamp(1.2rem, 2vw, 2rem);
 }
+
 #pongCanvas {
-    background: #222;
-    box-shadow: 0 0 16px #111;
-    border-radius: 6px;
-    display: block;
+  background: #222;
+  box-shadow: 0 0 16px #111;
+  border-radius: 6px;
+  display: block;
+  width: 95vw;         /* Responsive width */
+  max-width: 800px;    /* Prevents stretching on desktop */
+  height: auto;        /* Maintain aspect ratio */
+  touch-action: none;  /* Prevent scrolling while touching */
 }
